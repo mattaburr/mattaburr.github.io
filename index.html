@@ -3,51 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Matthew Aaron Burr — Attorney at Law</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+html, body {
+    height: 100%;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
     background-color: #ffffff;
-    color: #111;
+    color: #111111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    justify-content: center;
 }
 
 .container {
-    max-width: 700px;
-    width: 100%;
-    text-align: center;
+    max-width: 520px;
+    padding: 40px 30px;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+.name {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
 }
 
-h2 {
-    font-size: 18px;
-    font-weight: normal;
-    margin-bottom: 30px;
-    color: #444;
+.title {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 28px;
 }
 
-.contact {
-    font-size: 18px;
-    line-height: 1.8;
+.rule {
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-bottom: 28px;
+}
+
+.info {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.section {
+    margin-bottom: 18px;
+}
+
+.label {
+    color: #666666;
 }
 
 a {
-    color: #000;
+    color: #111111;
     text-decoration: none;
 }
 
@@ -56,28 +69,65 @@ a:hover {
 }
 
 .footer {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 14px;
-    color: #777;
+    color: #666666;
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="container">
-    <h1>Matthew Aaron Burr</h1>
-    <h2>Attorney at Law</h2>
 
-    <div class="contact">
-        Hot Springs, Arkansas<br>
-        Phone: <a href="tel:15015551234">(501) 555-1234</a><br>
-        Email: <a href="mailto:matt@example.com">matt@example.com</a>
+    <div class="name">
+        Matthew Aaron Burr
+    </div>
+
+    <div class="title">
+        Attorney at Law
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="info">
+
+        <div class="section">
+            <span class="label">Bar No.</span> 2013112
+        </div>
+
+        <div class="section">
+            P.O. Box 449<br>
+            Bryant, Arkansas 72089
+        </div>
+
+        <div class="section">
+            <span class="label">Phone</span><br>
+            <a href="tel:15013509757">(501) 350-9757</a>
+        </div>
+
+        <div class="section">
+            <span class="label">Email</span><br>
+            <a href="mailto:matt.a.burr@gmail.com">matt.a.burr@gmail.com</a>
+        </div>
+
     </div>
 
     <div class="footer">
         Office hours by appointment only
     </div>
+
 </div>
 
 </body>
