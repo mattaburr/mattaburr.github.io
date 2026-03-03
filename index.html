@@ -16,6 +16,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mattaburr.github.io/">
 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -47,78 +49,88 @@ body {
     background: #ffffff;
     color: #111111;
 
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Helvetica,
-        Arial,
-        sans-serif;
+    font-family: 'Inter', sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
-    max-width: 440px;
-    padding: 60px 24px;
+    max-width: 520px;
+    padding: 90px 32px;
 }
 
 .name {
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    margin-bottom: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
 }
 
 .title {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: #444444;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .rule {
     height: 1px;
     background: #e6e6e6;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .info {
     font-size: 15px;
-    line-height: 1.9;
+    font-weight: 300;
+    line-height: 2.0;
 }
 
 .section {
-    margin-bottom: 18px;
+    margin-bottom: 26px;
 }
 
 .label {
-    color: #666666;
+    color: #777777;
+    font-weight: 400;
 }
 
 .subtle {
-    color: #666666;
+    color: #777777;
+    font-size: 14px;
 }
 
 a {
     color: #111111;
     text-decoration: none;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 1px;
+    transition: border-color 0.2s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    border-color: #111111;
 }
 
 .footer {
-    margin-top: 32px;
+    margin-top: 48px;
     font-size: 14px;
+    font-weight: 300;
     color: #666666;
-    line-height: 1.7;
+    line-height: 1.9;
 }
 
 .memberships {
-    margin-top: 10px;
+    margin-top: 14px;
+    font-size: 13px;
+    letter-spacing: 0.04em;
 }
 
 </style>
@@ -173,4 +185,3 @@ a:hover {
 
 </body>
 </html>
-
