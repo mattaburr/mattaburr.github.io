@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +22,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": "Attorney",
   "name": "Matthew Aaron Burr",
   "jobTitle": "Attorney at Law",
   "address": {
@@ -62,11 +63,12 @@ body {
 .container {
     max-width: 520px;
     padding: 90px 32px;
+    margin: auto;
 }
 
 .name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 44px;
+    font-size: clamp(34px, 6vw, 44px);
     font-weight: 600;
     letter-spacing: -0.02em;
     margin-bottom: 12px;
@@ -141,9 +143,9 @@ a:hover {
 
 <div class="container">
 
-    <div class="name">
+    <h1 class="name">
         Matthew Aaron Burr
-    </div>
+    </h1>
 
     <div class="title">
         Attorney at Law<br>
@@ -185,3 +187,4 @@ a:hover {
 
 </body>
 </html>
+```
