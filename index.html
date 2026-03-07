@@ -23,7 +23,7 @@
 
 <link rel="icon" type="image/png" href="/favicon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -31,9 +31,6 @@
   "@type": "Attorney",
   "name": "Matthew Aaron Burr",
   "jobTitle": "Attorney at Law",
-  "sameAs": [
-    "https://github.com/mattaburr"
-  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "P.O. Box 449",
@@ -50,124 +47,77 @@
 
 <style>
 
-html, body {
-    height: 100%;
+body{
+margin:0;
+background:#ffffff;
+color:#222;
+font-family:'Cormorant Garamond',serif;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding-top:14vh;
+-webkit-font-smoothing:antialiased;
 }
 
-body {
-    margin: 0;
-    background: #ffffff;
-    color: #111111;
-
-    font-family: 'Inter', sans-serif;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 12vh;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+.container{
+width:min(560px,90vw);
+text-align:center;
+padding:60px 20px;
 }
 
-.container {
-    width: min(520px, 90vw);
-    padding: 90px 32px;
-    margin: auto;
-    text-align: center;
+.name{
+font-size:48px;
+font-weight:600;
+letter-spacing:-0.02em;
+margin-bottom:18px;
 }
 
-.name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(38px, 6vw, 48px);
-    font-weight: 600;
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-    margin-bottom: 12px;
+.attorney{
+font-size:22px;
+margin-bottom:26px;
 }
 
-.attorney-title {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-top: 8px;
-    margin-bottom: 22px;
+.rule{
+height:1px;
+background:#e6e6e6;
+width:260px;
+margin:26px auto;
 }
 
-.subrule {
-    height: 1px;
-    background: #e2e2e2;
-    width: 70px;
-    margin: 0 auto 24px auto;
+.section{
+font-size:20px;
+line-height:1.7;
+margin-bottom:28px;
 }
 
-.title {
-    font-size: 14.5px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #444444;
-    margin-bottom: 40px;
+.small{
+font-size:18px;
+color:#666;
 }
 
-.rule {
-    height: 1px;
-    background: #dcdcdc;
-    width: 80px;
-    margin: 18px auto 44px auto;
+a{
+color:#222;
+text-decoration:none;
 }
 
-.info {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.95;
+a:hover{
+text-decoration:underline;
 }
 
-.section {
-    margin-bottom: 26px;
+.footer{
+margin-top:28px;
+font-size:20px;
 }
 
-.section a {
-    display: inline-block;
-    margin-bottom: 4px;
+.hours{
+font-style:italic;
+margin-top:18px;
+margin-bottom:10px;
 }
 
-.label {
-    color: #777777;
-    font-weight: 400;
-}
-
-.subtle {
-    color: #777777;
-    font-size: 14px;
-}
-
-a {
-    color: #111111;
-    text-decoration: none;
-    border-bottom: 1px solid #dddddd;
-    padding-bottom: 1px;
-    transition: border-color 0.2s ease;
-}
-
-a:hover {
-    border-color: #111111;
-}
-
-.footer {
-    margin-top: 48px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #666666;
-    line-height: 1.9;
-}
-
-.memberships {
-    margin-top: 14px;
-    font-size: 13px;
-    letter-spacing: 0.04em;
+.members{
+font-size:18px;
+color:#444;
 }
 
 </style>
@@ -176,30 +126,28 @@ a:hover {
 
 <body>
 
-<main class="container">
+<div class="container">
 
-<h1 class="name">
+<div class="name">
 Matthew Aaron Burr
-</h1>
+</div>
 
-<div class="attorney-title">
+<div class="attorney">
 Attorney at Law
 </div>
 
-<div class="subrule"></div>
+<div class="rule"></div>
 
-<div class="title">
+<div class="section">
 Licensed in Arkansas<br>
 Practicing in the Greater Little Rock area
 </div>
 
 <div class="rule"></div>
 
-<div class="info">
-
 <div class="section">
 Arkansas Bar No. 2013112<br>
-<span class="subtle">PP-ASEL</span>
+<span class="small">PP-ASEL</span>
 </div>
 
 <div class="section">
@@ -208,23 +156,25 @@ Arkansas Bar No. 2013112<br>
 </div>
 
 <div class="section">
-<span class="label">For Legal Mail:</span><br>
 P.O. Box 449<br>
 Bryant, Arkansas 72089
 </div>
 
-</div>
+<div class="rule"></div>
 
 <div class="footer">
-Office hours by appointment
 
-<div class="memberships">
+<div class="hours">
+Office hours by appointment
+</div>
+
+<div class="members">
 Member: AOPA | AACDL | ATLA
 </div>
 
 </div>
 
-</main>
+</div>
 
 </body>
 </html>
