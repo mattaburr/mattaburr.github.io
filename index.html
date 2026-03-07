@@ -23,7 +23,7 @@
 
 <link rel="icon" type="image/png" href="/favicon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -49,51 +49,69 @@
 
 body{
 margin:0;
-background:#ffffff;
+background:#f3f3f3;
 color:#222;
 font-family:'Cormorant Garamond',serif;
 display:flex;
 justify-content:center;
 align-items:flex-start;
-padding-top:14vh;
+padding-top:9vh;
 -webkit-font-smoothing:antialiased;
 }
 
+/* Card container */
+
 .container{
 width:min(560px,90vw);
+background:white;
+padding:44px 32px;
 text-align:center;
-padding:60px 20px;
+border-radius:10px;
+box-shadow:0 18px 45px rgba(0,0,0,0.08);
 }
 
+/* Name */
+
 .name{
-font-size:48px;
+font-size:46px;
 font-weight:600;
 letter-spacing:-0.02em;
-margin-bottom:18px;
+margin-bottom:12px;
 }
+
+/* Attorney title */
 
 .attorney{
 font-size:22px;
-margin-bottom:26px;
+letter-spacing:0.08em;
+margin-bottom:18px;
 }
+
+/* Divider */
 
 .rule{
 height:1px;
-background:#e6e6e6;
-width:260px;
-margin:26px auto;
+background:#e5e5e5;
+width:240px;
+margin:18px auto;
 }
+
+/* Sections */
 
 .section{
 font-size:20px;
-line-height:1.7;
-margin-bottom:28px;
+line-height:1.5;
+margin-bottom:16px;
 }
+
+/* Smaller text */
 
 .small{
 font-size:18px;
 color:#666;
 }
+
+/* Links */
 
 a{
 color:#222;
@@ -104,15 +122,17 @@ a:hover{
 text-decoration:underline;
 }
 
+/* Footer */
+
 .footer{
-margin-top:28px;
-font-size:20px;
+margin-top:14px;
 }
 
 .hours{
 font-style:italic;
-margin-top:18px;
-margin-bottom:10px;
+margin-top:10px;
+margin-bottom:6px;
+font-size:20px;
 }
 
 .members{
