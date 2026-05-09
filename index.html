@@ -7,7 +7,7 @@
 
 <title>Matthew Aaron Burr | Lassiter & Cassinelli</title>
 
-<meta name="description" content="Matthew Aaron Burr is an Arkansas attorney with Lassiter & Cassinelli representing clients in criminal defense, litigation, and related matters throughout Arkansas.">
+<meta name="description" content="Matthew Aaron Burr is an Arkansas attorney with Lassiter & Cassinelli representing clients in criminal defense, constitutional litigation, and related matters throughout Arkansas.">
 
 <meta name="robots" content="index, follow">
 
@@ -24,11 +24,18 @@
 
 <link rel="icon" type="image/png" href="/favicon.png">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-/* Base */
+/* ---------- Base ---------- */
+
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
@@ -38,160 +45,219 @@ font-family:'EB Garamond', serif;
 display:flex;
 justify-content:center;
 align-items:flex-start;
-padding:12vh 24px 60px;
+padding:10vh 24px 72px;
 -webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+text-rendering:optimizeLegibility;
 }
 
-/* Layout */
+/* ---------- Layout ---------- */
 
 .container{
 width:min(760px,100%);
 text-align:center;
+animation:fadeIn 0.9s ease;
 }
 
-/* Name */
+/* ---------- Typography ---------- */
 
 .name{
-font-size:52px;
+font-size:56px;
 font-weight:500;
-letter-spacing:-0.02em;
-line-height:1.05;
-margin-bottom:12px;
+letter-spacing:-0.025em;
+line-height:1;
+margin-bottom:14px;
 }
-
-/* Mobile */
-
-@media (max-width: 480px){
-
-body{
-padding-top:10vh;
-}
-
-.name{
-font-size:36px;
-}
-
-}
-
-/* Firm */
 
 .firm{
 font-family:'Inter', sans-serif;
-font-size:13px;
-letter-spacing:0.24em;
+font-size:12px;
+font-weight:400;
+letter-spacing:0.30em;
 text-transform:uppercase;
-color:#444;
-margin-bottom:36px;
+color:#4a4a4a;
+margin-bottom:42px;
 }
-
-/* Divider */
-
-.rule{
-height:1px;
-background:#ebebeb;
-width:180px;
-margin:34px auto;
-}
-
-/* Sections */
 
 .section{
 font-family:'Inter', sans-serif;
 font-size:15px;
-line-height:2;
-letter-spacing:0.035em;
+line-height:2.05;
+letter-spacing:0.03em;
 color:#222;
 }
 
-/* Practice */
-
 .practice{
-font-size:14px;
-letter-spacing:0.14em;
+font-size:13px;
+letter-spacing:0.18em;
 text-transform:uppercase;
-line-height:2.1;
+line-height:2.25;
 }
 
-/* Bio */
-
 .bio{
-max-width:640px;
+max-width:660px;
 margin:0 auto;
 font-size:15px;
-line-height:2.05;
+line-height:2.15;
 color:#333;
 }
 
-/* Contact */
-
 .contact{
-line-height:1.95;
 font-size:14px;
+line-height:2;
 }
 
-/* Buttons */
+.footer{
+margin-top:12px;
+font-family:'Inter', sans-serif;
+font-size:12px;
+letter-spacing:0.05em;
+line-height:2;
+color:#666;
+}
+
+/* ---------- Dividers ---------- */
+
+.rule{
+height:1px;
+background:#ececec;
+width:180px;
+margin:38px auto;
+}
+
+/* ---------- Button ---------- */
 
 .buttons{
-margin-top:10px;
+margin-top:12px;
 display:flex;
 justify-content:center;
-gap:14px;
-flex-wrap:wrap;
 }
 
 .button{
 display:inline-block;
-padding:13px 22px;
-border:1px solid #d8d8d8;
+padding:14px 26px;
+border:1px solid #dddddd;
 font-family:'Inter', sans-serif;
-font-size:13px;
-letter-spacing:0.12em;
+font-size:12px;
+font-weight:400;
+letter-spacing:0.14em;
 text-transform:uppercase;
 text-decoration:none;
 color:#111;
-transition:all 0.18s ease;
+transition:
+background 0.22s ease,
+color 0.22s ease,
+border-color 0.22s ease,
+transform 0.22s ease;
 }
 
 .button:hover{
 background:#111;
 color:#fff;
+border-color:#111;
 text-decoration:none;
+transform:translateY(-1px);
 }
 
-/* Links */
+/* ---------- Links ---------- */
 
 a{
 color:#111;
 text-decoration:none;
+transition:opacity 0.18s ease;
 }
 
 a:hover{
-text-decoration:underline;
+opacity:0.72;
+text-decoration:none;
 }
 
-/* Footer */
-
-.footer{
-margin-top:14px;
-font-family:'Inter', sans-serif;
-font-size:13px;
-letter-spacing:0.04em;
-line-height:1.9;
-color:#666;
-}
-
-/* Footer links */
+/* Footer Links */
 
 .footer a{
 color:#666;
-text-decoration:none;
 border-bottom:1px solid transparent;
-transition:border-color 0.18s ease;
+transition:
+border-color 0.18s ease,
+opacity 0.18s ease;
 }
 
 .footer a:hover{
-text-decoration:none;
 border-bottom:1px solid #666;
+opacity:1;
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(6px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 640px){
+
+body{
+padding:8vh 22px 60px;
+}
+
+.name{
+font-size:40px;
+line-height:1.05;
+}
+
+.firm{
+font-size:11px;
+letter-spacing:0.22em;
+margin-bottom:34px;
+}
+
+.rule{
+margin:32px auto;
+width:150px;
+}
+
+.section{
+font-size:14px;
+}
+
+.practice{
+font-size:12px;
+letter-spacing:0.14em;
+line-height:2.15;
+}
+
+.bio{
+font-size:14px;
+line-height:2;
+}
+
+.contact{
+font-size:13px;
+line-height:1.95;
+}
+
+.button{
+width:100%;
+max-width:320px;
+padding:14px 18px;
+}
+
+.footer{
+font-size:11px;
+line-height:1.9;
+}
+
 }
 
 </style>
@@ -230,15 +296,23 @@ Matthew Aaron Burr is an Arkansas attorney practicing with Lassiter &amp; Cassin
 
 Arkansas Bar No. 2013112<br><br>
 
-<a href="mailto:matthew@lasscass.com">matthew@lasscass.com</a><br><br>
+<a href="mailto:matthew@lasscass.com">
+matthew@lasscass.com
+</a>
+
+<br><br>
 
 Lassiter &amp; Cassinelli<br>
 
 1218 West Sixth Street<br>
-Little Rock, Arkansas 72201<br><br>
+Little Rock, Arkansas 72201
+
+<br><br>
 
 Phone:
-<a href="tel:15013709300">(501) 370-9300</a><br>
+<a href="tel:15013709300">(501) 370-9300</a>
+
+<br>
 
 Fax:
 <a href="tel:15013709306">(501) 370-9306</a>
