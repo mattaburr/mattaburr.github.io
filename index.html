@@ -5,17 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Matthew Aaron Burr — Attorney at Law</title>
+<title>Matthew Aaron Burr | Lassiter & Cassinelli</title>
 
-<meta name="description" content="Matthew Aaron Burr is an Arkansas attorney providing statewide general practice and criminal defense representation. Arkansas Bar No. 2013112.">
+<meta name="description" content="Matthew Aaron Burr is an Arkansas attorney with Lassiter & Cassinelli representing clients in criminal defense, litigation, and related matters throughout Arkansas.">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://mattaburr.com/">
 
-<meta property="og:title" content="Matthew Aaron Burr — Attorney at Law">
+<meta property="og:title" content="Matthew Aaron Burr | Lassiter & Cassinelli">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mattaburr.com/">
-<meta property="og:description" content="Arkansas attorney Matthew Aaron Burr providing statewide general practice and criminal defense representation.">
+<meta property="og:description" content="Arkansas attorney Matthew Aaron Burr with Lassiter & Cassinelli providing statewide criminal defense and litigation representation.">
 <meta property="og:image" content="https://mattaburr.com/preview.png">
 <meta property="og:site_name" content="Matthew Aaron Burr">
 
@@ -23,7 +23,7 @@
 
 <link rel="icon" type="image/png" href="/favicon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -37,24 +37,25 @@ font-family:'EB Garamond', serif;
 display:flex;
 justify-content:center;
 align-items:flex-start;
-padding-top:14vh;
+padding:12vh 24px 60px;
 -webkit-font-smoothing:antialiased;
 }
 
 /* Layout */
 
 .container{
-width:min(720px,88vw);
+width:min(760px,100%);
 text-align:center;
 }
 
 /* Name */
 
 .name{
-font-size:48px;
+font-size:52px;
 font-weight:500;
-letter-spacing:-0.015em;
-margin-bottom:6px;
+letter-spacing:-0.02em;
+line-height:1.05;
+margin-bottom:12px;
 }
 
 .name a{
@@ -62,58 +63,102 @@ color:#111;
 text-decoration:none;
 }
 
-/* Mobile fix (name) */
+/* Mobile */
 
 @media (max-width: 480px){
+
+body{
+padding-top:10vh;
+}
+
 .name{
-font-size:34px;
-}
+font-size:36px;
 }
 
-/* Attorney title */
+}
 
-.attorney{
+/* Firm */
+
+.firm{
 font-family:'Inter', sans-serif;
-font-size:14px;
-letter-spacing:0.18em;
+font-size:13px;
+letter-spacing:0.24em;
 text-transform:uppercase;
-margin-bottom:28px;
-color:#333;
+color:#444;
+margin-bottom:36px;
 }
 
 /* Divider */
 
 .rule{
 height:1px;
-background:#eaeaea;
-width:140px;
-margin:28px auto;
+background:#ebebeb;
+width:180px;
+margin:34px auto;
 }
 
 /* Sections */
 
 .section{
 font-family:'Inter', sans-serif;
-font-size:16px;
-line-height:1.9;
-margin-bottom:18px;
-letter-spacing:0.04em;
+font-size:15px;
+line-height:2;
+letter-spacing:0.035em;
+color:#222;
 }
 
-/* Tagline */
+/* Practice */
 
-.tagline{
-font-size:17px;
-letter-spacing:0.08em;
-white-space:nowrap;
-}
-
-/* Mobile fix (tagline) */
-
-@media (max-width: 480px){
-.tagline{
+.practice{
 font-size:14px;
+letter-spacing:0.14em;
+text-transform:uppercase;
+line-height:2.1;
 }
+
+/* Bio */
+
+.bio{
+max-width:640px;
+margin:0 auto;
+font-size:15px;
+line-height:2.05;
+color:#333;
+}
+
+/* Contact */
+
+.contact{
+line-height:2.1;
+}
+
+/* Buttons */
+
+.buttons{
+margin-top:10px;
+display:flex;
+justify-content:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+.button{
+display:inline-block;
+padding:13px 22px;
+border:1px solid #d8d8d8;
+font-family:'Inter', sans-serif;
+font-size:13px;
+letter-spacing:0.12em;
+text-transform:uppercase;
+text-decoration:none;
+color:#111;
+transition:all 0.18s ease;
+}
+
+.button:hover{
+background:#111;
+color:#fff;
+text-decoration:none;
 }
 
 /* Links */
@@ -130,21 +175,12 @@ text-decoration:underline;
 /* Footer */
 
 .footer{
-margin-top:12px;
-}
-
-.hours{
-margin-top:18px;
-margin-bottom:8px;
-font-size:14px;
-letter-spacing:0.12em;
-text-transform:uppercase;
-}
-
-.members{
-font-size:14px;
-color:#555;
+margin-top:14px;
+font-family:'Inter', sans-serif;
+font-size:13px;
 letter-spacing:0.04em;
+line-height:1.9;
+color:#666;
 }
 
 </style>
@@ -156,47 +192,58 @@ letter-spacing:0.04em;
 <div class="container">
 
 <div class="name">
-<a href="about.html">Matthew Aaron Burr</a>
+<a href="/">Matthew Aaron Burr</a>
 </div>
 
-<div class="attorney">
-Attorney at Law
-</div>
-
-<div class="rule"></div>
-
-<div class="section tagline">
-General Practice | Criminal Defense | Statewide
+<div class="firm">
+Attorney with Lassiter &amp; Cassinelli
 </div>
 
 <div class="rule"></div>
 
-<div class="section">
-Arkansas Bar No. 2013112<br>
-PP-ASEL
+<div class="section practice">
+Criminal Defense<br>
+Complex Litigation<br>
+Statewide Representation
 </div>
 
-<div class="section">
+<div class="rule"></div>
+
+<div class="section bio">
+Matthew Aaron Burr is an Arkansas attorney practicing with Lassiter &amp; Cassinelli in Little Rock, Arkansas. His practice focuses on criminal defense, constitutional litigation, trial advocacy, and related matters throughout the State of Arkansas.
+</div>
+
+<div class="rule"></div>
+
+<div class="section contact">
+
+Arkansas Bar No. 2013112<br><br>
+
 <a href="tel:15013509757">(501) 350-9757</a><br>
-<a href="mailto:matt.a.burr@gmail.com">matt.a.burr@gmail.com</a>
+
+<a href="mailto:matthew@lasscass.com">matthew@lasscass.com</a>
+
 </div>
 
-<div class="section">
-P.O. Box 449<br>
-Bryant, Arkansas 72089
+<div class="buttons">
+
+<a class="button" href="https://lassitercassinelli.com/" target="_blank" rel="noopener">
+Firm Website
+</a>
+
+<a class="button" href="mailto:matthew@lasscass.com">
+Contact
+</a>
+
 </div>
 
 <div class="rule"></div>
 
 <div class="footer">
 
-<div class="hours">
-Office hours by appointment
-</div>
+Little Rock, Arkansas<br>
 
-<div class="members">
-Member: AOPA | AACDL | ATLA
-</div>
+Member: AACDL | Arkansas Trial Lawyers Association | AOPA
 
 </div>
 
