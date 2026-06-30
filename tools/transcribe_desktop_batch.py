@@ -111,13 +111,14 @@ def run_whisperx(media_path: Path, args: argparse.Namespace, hf_token: str) -> i
         "--model", args.model,
         "--language", args.language,
         "--diarize",
-        "--hf_token", hf_token,
         "--min_speakers", str(args.min_speakers),
         "--max_speakers", str(args.max_speakers),
         "--output_format", "txt",
         "--output_dir", str(args.output_dir),
     ]
 
+    if hf_token:
+        command.extend(["--hf_token", hf_token])
     if args.device:
         command.extend(["--device", args.device])
     if args.compute_type:
@@ -143,6 +144,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--device", default=None, help="Optional WhisperX device override, for example cpu or cuda.")
     parser.add_argument("--compute-type", default=None, help="Optional WhisperX compute type, for example int8 on CPU.")
     parser.add_argument("--unzip", action="store_true", help="Extract .zip files found under the input folder before scanning.")
+    parser.add_argument("--offline", action="store_true", help="Use only locally cached models; no network calls for model downloads.")
     return parser.parse_args()
 
 
@@ -151,8 +153,12 @@ def main() -> int:
     args.input_dir.mkdir(parents=True, exist_ok=True)
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
-    if not args.hf_token:
-        print("Error: diarization requires a Hugging Face token. Set HF_TOKEN or pass --hf-token.", file=sys.stderr)
+    if args.offline:
+        os.environ.setdefault("HF_HUB_OFFLINE", "1")
+        os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+
+    if not args.hf_token and not args.offline:
+        print("Error: diarization requires a Hugging Face token for first-time model access. Set HF_TOKEN, pass --hf-token, or use --offline after models are cached locally.", file=sys.stderr)
         return 2
 
     if args.unzip:
